@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EvaluacionP3DiazDaniel.Views.SearchCountryPage"
+             Title="SearchCountryPage">
+    <StackLayout>
+        <Entry
+            x:Name="DDiaz_txtSearch"
+            Placeholder="Ingrese nombre del pais"/>
+        <Button
+            x:Name="DDiaz_btnSearch"
+            Text="Buscar"
+            Clicked="OnSearchClicked"/>
+        <Button
+            x:Name="DDiaz_btnClear"
+            Text="Limpiar"
+            Clicked="OnClearClicked"/>
+
+    </StackLayout>
+</ContentPage>
