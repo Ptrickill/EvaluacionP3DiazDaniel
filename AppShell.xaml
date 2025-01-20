@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="EvaluacionP3DiazDaniel.AppShell"
+    x:Class="EvaluacionP3DiazDaniel.App"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:EvaluacionP3DiazDaniel"
+    xmlns:views="clr-namespace:EvaluacionP3DiazDaniel.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="EvaluacionP3DiazDaniel">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Buscar Pais"
+            Icon="search_icon.png"
+            ContentTemplate="{DataTemplate views:SearchCountryPage}"/>
 
+        <ShellContent
+            Title="Paises Consultados"
+            Icon="list_icon.png"
+            ContentTemplate="{DataTemplate views:CountriesListPage}"/>
+    </TabBar>
 </Shell>

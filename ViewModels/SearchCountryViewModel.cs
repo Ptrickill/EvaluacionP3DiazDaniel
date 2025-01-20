@@ -71,5 +71,18 @@ namespace EvaluacionP3DiazDaniel.ViewModels
             CountryName = string.Empty;
             ResultMessage = string.Empty;
         }
+
+
     }
+
+        public class SearchCountryPage : ContentPage
+        {
+            public SearchCountryPage(SQLiteHelper database)
+            {
+                InitializeComponent();
+                BindingContext = new SearchCountryViewModel(new RestCountriesService(), database);
+            }
+        }
+    }
+
 }

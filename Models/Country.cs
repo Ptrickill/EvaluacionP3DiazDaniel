@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
+using EvaluacionP3DiazDaniel.Models;
 
 namespace EvaluacionP3DiazDaniel.Models
 {
