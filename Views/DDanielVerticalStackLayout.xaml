@@ -3,9 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EvaluacionP3DiazDaniel.DDanielVerticalStackLayout"
              Title="DDanielVerticalStackLayout">
+    <ContentPage.BindingContext>
+        <vm:BuscarViewModel/>
+    </ContentPage.BindingContext>
     <VerticalStackLayout>
         <Entry x:Name="DDaniel_IngresePais"
-               Placeholder="Ingrese el nombre del pais"/>
+               Placeholder="Ingrese el nombre del pais"
+               Text="{Binding Pais}"/>
         <Button x:Name="DDaniel_BtnBuscar"
                 Text="Buscar"
                 Command="{Binding BuscarCommand}"/>
