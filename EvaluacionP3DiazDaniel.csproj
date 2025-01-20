@@ -69,6 +69,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\CountriesListPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\SearchCountryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
